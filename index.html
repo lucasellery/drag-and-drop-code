@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simple Kanban Board</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" 
   </head>
   <body>
     <div class="boards">
+
       <div class="board">
         <h3>To do</h3>
         <div class="dropzone">
           <div class="card" draggable="true">
-            <div class="status"></div>
+            <div class="status white"></div>
             <div class="content">Read some book</div>
           </div>
         </div>
@@ -21,8 +25,8 @@
       <div class="board">
         <h3>In progress</h3>
         <div class="dropzone">
-          <div class="card">
-            <div class="status"></div>
+          <div class="card" draggable="true" >
+            <div class="status pink"></div>
             <div class="content">Coding NLW</div>
           </div>
         </div>
@@ -31,12 +35,13 @@
       <div class="board">
         <h3>Done</h3>
         <div class="dropzone">
-          <div class="card">
-            <div class="status"></div>
+          <div class="card" draggable="true">
+            <div class="status green"></div>
             <div class="content">Learning french</div>
           </div>
         </div>
       </div>
+
     </div>
   </body>
 </html>
